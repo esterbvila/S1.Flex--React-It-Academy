@@ -1,0 +1,135 @@
+body{
+    margin:0;
+    font-size:1rem;
+    color:gray;
+}
+body > div{
+    border:20px rgba(242, 242, 242, 0.242) ;
+    margin:20px;
+}
+
+/* NAV */
+.container-1 >.subcontainer-1{
+    display:flex;
+    background-color: rgb(242, 242, 242);
+    padding:20px;
+    max-height:80px;
+}
+.container-1 >.subcontainer-1 > div:first-child{
+    width:20%;
+}
+.container-1 >.subcontainer-1 > div:first-child > img{
+    width:100%;
+    height:100%;
+}
+.container-1 >.subcontainer-1 > div:nth-child(2){
+    margin: auto 0;
+    width:70%;
+}
+.container-1 >.subcontainer-1 > div:nth-child(2)>ul{
+    display:flex;
+    list-style:none;
+    padding:0;
+}
+.container-1 >.subcontainer-1 > div:nth-child(2)>ul>li{
+    margin:3%;
+}
+.container-1 >.subcontainer-1 > div:last-child{
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction:column;
+    margin: 0 auto;
+}
+
+.container-1 >.subcontainer-2{
+    background-image:url("./img/kyoto.jpeg");
+    border: rgba(242, 242, 242, 0.3) solid 20px;
+    border-top:none;
+    height:100px;
+    background-position:50% 40%;
+    background-size:110%;
+    background-repeat: no-repeat;
+}
+.container-1 >.subcontainer-2{
+    display:flex;
+    justify-content:Center;
+    padding-top:20px;
+    color:white;
+}
+
+
+.container-2{
+    display:flex;
+}
+.container-2 >.subcontainer-1{
+    width:50%;
+    background-color:gray;
+    padding:10px;
+    display:flex;
+    flex-direction:column;
+    border-right:black solid 20px;
+}
+.container-2 >.subcontainer-1 > .rowupper {
+   display:flex;
+}
+.container-2 >.subcontainer-1 > .rowupper > div{
+    height:20px;
+    background-color:blue;
+    width:50%;
+    margin:10px;
+}
+.container-2 >.subcontainer-1 > .row-3{
+    background-color:lightpink;
+    height:20px;
+    margin:10px;
+}
+.container-2 >.subcontainer-2{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+    background-color:lightyellow;
+    padding:15px;
+}
+.container-2 >.subcontainer-2 > div{
+    background-color:green;
+    height:20px;
+    margin:5px;
+}
+
+.container-3{
+    background-color:darkmagenta;
+    height:20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-2 {
+        flex-direction:column;
+        border:yellow 20px solid;
+    }
+    .container-2 >.subcontainer-1{
+        width:initial; 
+        border-right:none;
+        border-bottom: yellow 20px solid;  
+    }
+    .container-2 >.subcontainer-2{
+        width:initial;      
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container-1 >.subcontainer-1{
+        flex-direction:column;
+    }
+    .container-1 >.subcontainer-1 > div{
+        width:initial;
+    }
+    .container-1 >.subcontainer-1 > div:nth-child(2){
+        margin:20px 0;
+        width:initial;
+    }
+    .container-2 >.subcontainer-1 > .rowupper {
+        flex-direction:column;
+    }
+    .container-2 >.subcontainer-1 > .rowupper > div{
+        width:initial;
+    }
+}
