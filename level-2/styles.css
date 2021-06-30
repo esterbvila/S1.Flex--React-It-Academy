@@ -4,14 +4,19 @@ body{
     color:gray;
 }
 body > div{
-    border:20px rgba(242, 242, 242, 0.242) ;
     margin:20px;
 }
 
 /* NAV */
+.container-1{
+    background-image:url("./img/Activitat\ Flex\ -\ Nivell\ 2\ -\ fons\ capçalera.jpg");
+    background-position:50% 47%;
+    background-size:115%;
+    background-repeat:no-repeat;
+    border: rgba(249, 249, 249, 0.461) solid 20px;
+}
 .container-1 >.subcontainer-1{
     display:flex;
-    background-color: rgb(242, 242, 242);
     padding:20px;
     max-height:80px;
 }
@@ -19,7 +24,6 @@ body > div{
     width:20%;
 }
 .container-1 >.subcontainer-1 > div:first-child > img{
-    width:100%;
     height:100%;
 }
 .container-1 >.subcontainer-1 > div:nth-child(2){
@@ -40,21 +44,14 @@ body > div{
     flex-direction:column;
     margin: 0 auto;
 }
-
 .container-1 >.subcontainer-2{
-    background-image:url("./img/kyoto.jpeg");
-    border: rgba(242, 242, 242, 0.3) solid 20px;
-    border-top:none;
-    height:100px;
-    background-position:50% 40%;
-    background-size:110%;
-    background-repeat: no-repeat;
+    height:150px;
+    
 }
 .container-1 >.subcontainer-2{
     display:flex;
-    justify-content:Center;
-    padding-top:20px;
-    color:white;
+    justify-content: center;
+    color:rgba(255, 192, 203, 0.92);
 }
 
 
