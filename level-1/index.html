@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1.Flex_Nivell-1</title>
+    <style>
+        body{
+            margin:0;
+        }
+        body > div{
+            border:20px black solid;
+            margin:20px;
+        }
+        .container-1 >.subcontainer-1{
+            display:flex;
+            border-bottom: 20px black solid;
+            background-color: gray;
+            padding:20px;
+        }
+        .container-1 >.subcontainer-1 > div{
+            background-color:coral;
+            height:20px;
+            width:20%;
+        }
+        .container-1 >.subcontainer-1 > div:nth-child(2){
+            margin-left:20px;
+            margin-right:20px;
+            width:80%;
+        }
+        .container-1 >.subcontainer-2{
+            background-color:yellow;
+            border: orange solid 20px;
+            height:20px;
+        }
+        .container-2{
+            display:flex;
+        }
+        .container-2 >.subcontainer-1{
+            width:50%;
+            background-color:gray;
+            padding:10px;
+            display:flex;
+            flex-direction:column;
+            border-right:black solid 20px;
+        }
+        .container-2 >.subcontainer-1 > .rowupper {
+           display:flex;
+        }
+        .container-2 >.subcontainer-1 > .rowupper > div{
+            height:20px;
+            background-color:blue;
+            width:50%;
+            margin:10px;
+        }
+        .container-2 >.subcontainer-1 > .row-3{
+            background-color:lightpink;
+            height:20px;
+            margin:10px;
+        }
+        .container-2 >.subcontainer-2{
+            display:flex;
+            flex-direction:column;
+            width:50%;
+            background-color:lightyellow;
+            padding:15px;
+        }
+        .container-2 >.subcontainer-2 > div{
+            background-color:green;
+            height:20px;
+            margin:5px;
+        }
+
+        .container-3{
+            background-color:darkmagenta;
+            height:20px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .container-2 {
+                flex-direction:column;
+                border:yellow 20px solid;
+            }
+            .container-2 >.subcontainer-1{
+                width:initial; 
+                border-right:none;
+                border-bottom: yellow 20px solid;  
+            }
+            .container-2 >.subcontainer-2{
+                width:initial;      
+            }
+        }
+        @media only screen and (max-width: 600px) {
+            .container-1 >.subcontainer-1{
+                flex-direction:column;
+            }
+            .container-1 >.subcontainer-1 > div{
+                width:initial;
+            }
+            .container-1 >.subcontainer-1 > div:nth-child(2){
+                margin:20px 0;
+                width:initial;
+            }
+            .container-2 >.subcontainer-1 > .rowupper {
+                flex-direction:column;
+            }
+            .container-2 >.subcontainer-1 > .rowupper > div{
+                width:initial;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="subcontainer-1">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="subcontainer-2"></div>
+    </div>
+
+    <div class="container-2">
+        <div class="subcontainer-1">
+            <div class="rowupper">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="rowupper">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row-3"></div>
+        </div>
+        <div class="subcontainer-2">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="container-3"></div>
+</body>
+</html>
